@@ -1,0 +1,15 @@
+---
+layout: main
+main: true
+title: 블로그
+---
+
+<div class="columns">
+    {% include tags.html %}
+    <ul class="catalogue">
+        {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'blog' %}
+        {% for page in sorted %}
+        {% include post-list.html %}
+        {% endfor %}
+    </ul>
+</div>

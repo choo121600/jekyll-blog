@@ -1,0 +1,25 @@
+.hidden {
+    display: none;
+}
+
+.post-list-tags {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.tag {
+    display: inline-flex;
+    margin: 2px;
+    padding: 3px;
+    background-color: $medium-gray;
+    color: $light-gray;
+    border-radius: 4px;
+    font-size: 12px;
+    &:hover {
+        cursor: pointer;
+        color: #ffd559;
+    }
+    &.selected {
+        color: #ffd559;
+    }
+}

@@ -1,0 +1,54 @@
+.columns {
+    width: 100%;
+}
+
+.catalogue {
+    display: block;
+    &-item {
+        border-bottom: 1px solid $light-gray;
+    }
+    &-item-link:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    &-category {
+        color: $orange;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    &-info {
+        display: block;
+        @media (max-width: $desktop-break) {
+            margin: 10px 0;
+        }
+        h1.catalogue-title {
+            display: block;
+            font-size: 24px;
+            color: $medium-black;
+            margin: 0.3em 0;
+        }
+        .catalogue-date {
+            color: $medium-gray;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .catalogue-body {
+            margin: 5px 0;
+            color: $medium-black;
+        }
+    }
+    &-item.card{
+        @media (max-width: $tablet-break) {
+            width: 95%;
+            display: block;
+            padding: 20px 10px;
+        }
+        width: 30%;
+        padding: 30px;
+        border-bottom: 1px solid $light-gray;
+        h1.catalogue-title {
+            font-size: 20px;
+        }
+    }
+}

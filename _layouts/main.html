@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body onload="loadingPage()">
+        <div class="loading">
+            <div class="loading_text">
+                <h1 class="jt --debug">
+                    <span class="jt__row">
+                    <span class="jt__text">Keith Choo</span>
+                    </span>
+                    <span class="jt__row jt__row--sibling" aria-hidden="true">
+                    <span class="jt__text">Keith Choo</span>
+                    </span>
+                    <span class="jt__row jt__row--sibling" aria-hidden="true">
+                    <span class="jt__text">Keith Choo</span>
+                    </span>
+                    <span class="jt__row jt__row--sibling" aria-hidden="true">
+                    <span class="jt__text">Keith Choo</span>
+                    </span>
+                </h1>
+            </div>
+        </div>
+        <div class="main_div">
+
+            {% assign current = page.url | downcase | split: '/' %}
+    
+            {% include navbar.html %}
+    
+            <main>
+                {{ content }}
+            </main>
+            {% include footer.html %}
+        </div>
+        <script>
+            var loadingTime;
+
+            function loadingPage() {
+                loadingTime = setTimeout(showPage, 1000);
+            }
+            var showPage = function() {
+                var loading = $("div.loading"); 
+                var main_div = $("div.main_div"); 
+                loading.css("display","none"); 
+                main_div.css("display","block");
+            }; 
+        </script>
+    </body>
+
+
+
+</html>

@@ -1,0 +1,33 @@
+<div class="home">
+    <div>
+        <div>
+            <img style="width: 100%;" src="../meta/img/Calendar.PNG" alt="Calendar">
+        </div>
+        <div class="title">
+            <h2 class="title-text">tech 게시물</h2>
+        </div>
+        <div class="contents">
+            <table class="catalouge">
+                <tr>
+                    {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' %}
+                    {% for page in sorted limit:3 %}
+                    {% include post-card.html %}
+                    {% endfor %}
+                </tr>
+            </table>
+        </div>
+        <div class="title">
+            <h2 class="title-text">blog 게시물</h2>
+        </div>
+        <div class="contents">
+            <table class="catalouge">
+                <tr>
+                    {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'blog' %}
+                    {% for page in sorted limit:3 %}
+                    {% include post-card.html %}
+                    {% endfor %}
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
