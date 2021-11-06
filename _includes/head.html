@@ -1,0 +1,46 @@
+<head lang="ko">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- HTML Meta Tags -->
+  <title>{% if page.home == true %}{{ site.title }}{% elsif page.main == true %}{{ page.title }} | {{ site.title }}{% else %}{{ page.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.home == true %}{{ site.description }}{% else %}{{ site.title }}{% endif %}">
+
+  <!-- Naver Search Engine Tag -->
+  <meta name="naver-site-verification" content="5b208047931fdaff0613f2b1cb994b1b0075d1e6" />
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="{% if page.home == true %}{{ site.title }}{% elsif page.main == true %}{{ page.title }} | {{ site.title }}{% else %}{{ page.title }}{% endif %}">
+  <meta itemprop="description" content="{% if page.home == true %}{{ site.description }}{% else %}{{ site:title }}{% endif %}">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="/meta/favicon.ico"> -->
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/meta/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon/favicon-32x32.png">
+  <link rel="manifest" href="/meta/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/meta/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJN8HNT9PT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RJN8HNT9PT');
+  </script>
+</head>
+
+
