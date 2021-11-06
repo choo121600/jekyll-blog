@@ -9,7 +9,7 @@ hash-tag: [Poem, 2021]
 
 ---
 
-<strong>사모</strong>   -조지훈-<br>
+<strong>사모</strong>-조지훈-<br>
 
 <br>
 사랑을 다해 사랑하였노라고<br>
