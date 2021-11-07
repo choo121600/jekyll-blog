@@ -13,6 +13,7 @@ hash-tag: [Start-up, 2021]
 Every start up is an overnight success,<br>
 But it happens in 500th night.<br>
 모르는 사람이 보기엔 단숨에 성공을 시킨 것처럼 보일 수도 있다.<br>
+그를 이해하지 못하는 것은 아니다. 엄청난 성공을 거두어야 애초에 대중에게 전달되니까.<br>
 하지만 그동안 수많은 빛이 보이지 않는 밤을 지새우게 되는데<br>
 그렇게 간절함과 노력이 들어감에도 확실한 성공은 보장되지 않는다.<br>
 <br>
