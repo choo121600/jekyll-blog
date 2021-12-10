@@ -1,9 +1,9 @@
 ---
 layout: post
 type: blog
-date: 2021-11-15 21:34
+date: 2021-11-30 20:42
 category: Diary
-title: 결정이라는 것에서
+title: 행복이라는 것
 blog-header: true
 hash-tag: [Diary, 2021]
 
