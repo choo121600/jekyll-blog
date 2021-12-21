@@ -3,7 +3,7 @@ layout: post
 type: tech
 date: 2021-12-20 09:56
 category: React
-title: 'Switch' was not found in 'react-router-dom' 에러
+title: Switch was not found in react-router-dom 에러
 tech-header: true
 hash-tag: [React, WEB]
 ---
