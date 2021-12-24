@@ -2,7 +2,7 @@
 #css
 ---
 
-@import 'variables';
+{@import 'variables';
 @import 'navbar';
 @import 'base';
 @import "footer";
@@ -10,4 +10,4 @@
 @import "post";
 @import "home";
 @import "tag";
-@import "info";
+@import "info";}
