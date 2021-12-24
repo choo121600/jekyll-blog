@@ -1,7 +1,6 @@
 .navbar {
     overflow: auto;
     padding: 10px 0;
-    border-bottom: 1px solid #e9ecef;
     position: relative;
     &-container {
         display: flex;
@@ -12,7 +11,10 @@
         justify-content: space-between;
         .navbar-brand {
             float: left;
-            margin: 0 30px;
+            margin: 0 5vw;
+            h1 {
+                margin: 0.5em 0;
+            }
         }
         a {
             display: flex;
@@ -22,7 +24,11 @@
                 font-family: Saoldisplay,'Times New Roman',sans-serif;
             }
         }
+        .navbar-collapse {
+            margin: 0 5vw;
+        }
         ul {
+            margin: 0.5em 0;
             display: flex;
             flex-direction: row;
             li {
