@@ -1,33 +1,137 @@
-<div class="home">
-    <div>
+<!-- main hero section -->
+<section class="hero-home">
+    <div class="container_baseline">
         <div>
-            <img style="width: 100%;" src="../meta/img/Calendar.PNG" alt="Calendar">
-        </div>
-        <div class="title">
-            <h2 class="title-text">tech 게시물</h2>
-        </div>
-        <div class="contents">
-            <table class="catalouge">
-                <tr>
-                    {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' %}
-                    {% for page in sorted limit:3 %}
-                    {% include post-card.html %}
-                    {% endfor %}
-                </tr>
-            </table>
-        </div>
-        <div class="title">
-            <h2 class="title-text">blog 게시물</h2>
-        </div>
-        <div class="contents">
-            <table class="catalouge">
-                <tr>
-                    {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'blog' %}
-                    {% for page in sorted limit:3 %}
-                    {% include post-card.html %}
-                    {% endfor %}
-                </tr>
-            </table>
+            <h1 class="header_title_2">YeongUk Choo</h1>
         </div>
     </div>
-</div>
+    <!-- <div class="home_title">
+        <div>
+            <h1>Keith Choo</h1>
+        </div>
+    </div> -->
+    <div class="home_marquee_container">
+        <div class="container_marquee">
+            <marquee> 
+                <h1>"Every man takes the limits of his own field of vision for the limits of the world." -Arthur Schopenhauer-</h1>
+            </marquee>
+        </div>
+    </div>
+    <div class="scroll-container">
+        <a href="#slide1">
+            <span class="scroll span-right"></span>
+            <span class="scroll span-left"></span>
+            <p>Scroll</p>
+        </a>
+    </div>
+    <div class="home_bg_img">
+        <img
+            src="../img/bgh.jpg"
+            loading="eager"
+            sizes="100vw"
+            alt="Home Main Background image"
+        />
+    </div>
+</section>
+
+<section id="slide1">
+    <article class="article1 need-margin min-height-500 up-on-scroll">
+        <h1>The road not taken</h1>
+        <h2>-Robert Frost-</h2>
+        <br />
+        <p>TWO roads diverged in a yellow wood,</p>
+        <p>And sorry I could not travel both</p>
+        <p>And be one traveler, long I stood</p>
+        <p>And looked down one as far as I could</p>
+        <p>To where it bent in the undergrowth;</p>
+        <br />
+        <p>Then took the other, as just as fair,</p>
+        <p>And having perhaps the better claim,</p>
+        <p>Because it was grassy and wanted wear;</p>
+        <p>Though as for that the passing there</p>
+        <p>Had worn them really about the same,</p>
+        <br />
+        <p>And both that morning equally lay</p>
+        <p>In leaves no step had trodden black.</p>
+        <p>Oh, I kept the first for another day!</p>
+        <p>Yet knowing how way leads on to way,</p>
+        <p>I doubted if I should ever come back.</p>
+        <br />
+        <p>I shall be telling this with a sigh</p>
+        <p>Somewhere ages and ages hence:</p>
+        <p>Two roads diverged in a wood, and I—</p>
+        <p>I took the one less traveled by,</p>
+        <p>And that has made all the difference</p>
+    </article>
+</section>
+
+<section class="tech-new up-on-scroll">
+    <div class="title">
+        <h2 class="title-text">Tech 최신 게시물</h2>
+    </div>
+    {% include tags.html %}
+    <div class="contents">
+        <table class="catalouge">
+            <tr>
+                {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' %}
+                {% for page in sorted limit:3 %}
+                {% include post-card.html %}
+                {% endfor %}
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section class="background-change-wrap up-on-scroll">
+    <div>
+    <img src="../img/bg.jpg" alt="" />
+    </div>
+</section>
+<script>
+let ticking = false;
+
+function isElementUnderBottom(elem, triggerDiff) {
+    const { top } = elem.getBoundingClientRect();
+    const { innerHeight } = window;
+    return top > innerHeight + (triggerDiff || 0);
+    }
+
+    function handleScroll() {
+    ticking = false;
+
+    const upOnScrollElems = document.querySelectorAll('.up-on-scroll');
+    const upOnHeight = document.body.offsetHeight/2.5 ;
+    console.log(upOnHeight);
+    upOnScrollElems.forEach(elem => {
+        if (isElementUnderBottom(elem)) {
+        elem.style.opacity = "0";
+        elem.style.transform = `translateY(${upOnHeight}px)`;
+        } else {
+        elem.style.opacity = "1";
+        elem.style.transform = 'translateY(0px)';
+        }
+    });
+
+    const changeBgSection = document.querySelector('.background-change-wrap');
+    const changeBgImg = document.querySelector('.background-change-wrap > div');
+    const {top: bgTop, height: bgHeight} = changeBgSection.getBoundingClientRect();
+    if (bgTop < 0) {
+        const rate = (-1) * bgTop / 4;
+        changeBgImg.style.filter = `grayscale(${rate}%)`;
+        changeBgImg.style.opacity = `${(100-rate/5) / 100}`;
+    } else {
+        changeBgImg.style.filter = 'none';
+            changeBgImg.style.opacity = `1`;
+    }
+}
+
+function requestTick() {
+    if(!ticking) {
+        requestAnimationFrame(handleScroll);
+    }
+    ticking = true;
+}
+
+window.addEventListener('scroll', requestTick);
+
+</script>

@@ -2,14 +2,12 @@
 #css
 ---
 
-{
-    @import "info";
-    @import 'variables';
-    @import 'navbar';
-    @import 'base';
-    @import "footer";
-    @import "catalogue";
-    @import "post";
-    @import "home";
-    @import "tag";
-}
+@import 'variables';
+@import 'navbar';
+@import 'base';
+@import "footer";
+@import "catalogue";
+@import "post";
+@import "home";
+@import "tag";
+@import "info";
