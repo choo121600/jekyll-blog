@@ -6,6 +6,10 @@ title: tech
 
 
 
+<div class="category-container">
+    <h3>Category</h3>
+    {% include tags.html %}
+</div>
 
 <div class="columns">
     <ul class="catalogue">

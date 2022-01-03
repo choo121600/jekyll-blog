@@ -300,7 +300,7 @@ figure > img {
   flex-direction: column;
   justify-content: center;
   width: calc(40% - 1px);
-  @media (max-width: $tablet-break) {
+  @media (max-width: $desktop-break) {
     width: 95%;
     display: block;
     padding: 20px 10px;

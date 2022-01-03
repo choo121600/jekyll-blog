@@ -9,14 +9,17 @@ url:                "https://choo121600.github.io"
 twitter_username:   
 github_username:    choo121600
 facebook_username:  
-instagram_username:  
-linkedin_username:
+instagram_username:   
+linkedin_username:    yeong-uk-choo-095330217
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   G-RJN8HNT9PT # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 paginate:           5
 paginate_path:      "/posts/page:num/"
 plugins:

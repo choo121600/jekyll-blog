@@ -23,10 +23,14 @@ hash-tag: [MySQL]
 
 ## 응용
 #### DB 생성
-```$ CREATE DATABASE 데이터베이스이름;```
+```
+$ CREATE DATABASE 데이터베이스이름;
+```
 
 #### DB 사용
-```$ USE 데이터베이스이름;```
+```
+$ USE 데이터베이스이름;
+```
 
 #### Table 생성
 ```
@@ -41,10 +45,16 @@ $ INSERT INTO 테이블명(필드명, ...) VALUES ('데이터1', '데이터2', .
 ```
 
 #### 데이터 모두 보기
-```$ SELECT * FROM 테이블명```
+```
+    $ SELECT * FROM 테이블명
+```
 
 #### 데이터 일부 수정
-```$ UPDATE 테이블명 SET 수정필드명="변경값" WHERE 조건필드명="조건값"```
+```
+    $ UPDATE 테이블명 SET 수정필드명="변경값" WHERE 조건필드명="조건값"
+```
 
 #### 데이터 일부 삭제
-```$ DELETE FROM 테이블명 WHERE 필드명="값"```
+```
+    $ DELETE FROM 테이블명 WHERE 필드명="값"
+```
