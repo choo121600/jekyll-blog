@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-date: 2021-01-05 20:53
+date: 2022-01-05 20:53
 category: Diary
 title: 기부 혁신
 blog-header: true
