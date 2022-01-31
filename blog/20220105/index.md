@@ -5,7 +5,7 @@ date: 2022-01-05 20:53
 category: Diary
 title: 기부 혁신
 blog-header: true
-hash-tag: [Diary, 2021]
+hash-tag: [Diary, 2022]
 
 ---
 
