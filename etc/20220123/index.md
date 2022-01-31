@@ -1,11 +1,11 @@
 ---
 layout: post
-type: blog
+type: etc
 date: 2022-01-23 22:53
-category: Diary
+category: Documentary
 title: 소셜딜레마
 blog-header: true
-hash-tag: [Diary, 2022]
+hash-tag: [Documentary, 2022]
 
 ---
 

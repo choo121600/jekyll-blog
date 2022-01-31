@@ -4,8 +4,8 @@
 - id: tech
   label: tech
 
-# - id: project
-#   label: project
-
 - id: blog
   label: blog
+
+- id: etc
+  label: etc

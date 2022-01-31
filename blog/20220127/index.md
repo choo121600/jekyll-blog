@@ -2,7 +2,7 @@
 layout: post
 type: blog
 date: 2022-01-27 18:33
-category: BlockChain
+category: 회고
 title: 2022년을 시작하며
 tech-header: true
 hash-tag: [Diary, 회고, 2022]
