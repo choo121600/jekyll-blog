@@ -2,10 +2,10 @@
 layout: post
 type: blog
 date: 2022-01-05 20:53
-category: Diary
+category: Politics
 title: 기부 혁신
 blog-header: true
-hash-tag: [Diary, 2022]
+hash-tag: [Politics, 2022]
 
 ---
 

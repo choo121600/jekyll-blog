@@ -1,6 +1,6 @@
 ---
 layout: post
-type: etc
+type: blog
 date: 2022-01-23 22:53
 category: Documentary
 title: 소셜딜레마
